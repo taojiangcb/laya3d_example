@@ -1,0 +1,29 @@
+{
+    "version": "0.1.0",
+    "tasks": [
+        {
+            "label": "buildclient",
+            "command": "gulp",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceRoot}"
+            },
+            "problemMatcher": []
+        },
+        {
+            "command": "tsc",
+            "isShellCommand": true,
+            "args": [
+                "-p",
+                ".",
+                "--outDir",
+                "bin/js"
+            ],
+            "showOutput": "silent",
+            "problemMatcher": "$tsc"
+        }
+    ],
+  
+
+    
+}
